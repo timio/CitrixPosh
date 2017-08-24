@@ -143,7 +143,6 @@ function Find-UnassignedDesktops
             $match | Add-Member -MemberType NoteProperty -Name AssignedDesktopCount -Value $assignedDesktops
             $matches += $match         
          }
-         $matches | Out-GridView
 
          #loop through matches and output 0 assigned desktops to text file
          $header = "**************************************`r`n*`r`n* The Following Users have 0 assigned desktops `r`n*`r`n**************************************"
